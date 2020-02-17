@@ -76,7 +76,7 @@ La estructura del comando es de la siguiente manera:
 
 En caso solo se ingrese el `<path-to-file>` se considerara: ruta, link y texto.
 
-__Por ejemplo:__
+*Por ejemplo:*
 
 `md-links example.md`
 
