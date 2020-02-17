@@ -68,11 +68,11 @@ La estructura del comando es de la siguiente manera:
 
 En caso solo de ingrese el `<path-to-file>` se considerara: ruta, link y texto.
 
-** Por ejemplo: **
+###### Por ejemplo:
 
 `md-links example.md`
 
-** Resultado: **
+###### Resultado:
 
 ```sh
 $ md-links ./some/example.md
@@ -87,11 +87,11 @@ $ md-links ./some/example.md
 
 Si pasamos la opción `--validate`, Comprueba si el link funciona o no.
 
-** Por ejemplo: **
+###### Por ejemplo:
 
 `md-links example.md --validate`
 
-** Resultado: **
+###### Resultado:
 
 ```sh13d99df067c1
 $ md-13d99df067c1
@@ -105,11 +105,11 @@ $ md-13d99df067c1
 Si pasamos la opción `--stats` la salida será un texto con estadísticas
 básicas sobre los links.
 
-** Por ejemplo: **
+###### Por ejemplo:
 
 `md-links example.md --stats`
 
-** Resultado: **
+###### Resultado:
 
 ```sh
 $ md-links ./some/example.md --stats
