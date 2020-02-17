@@ -1,6 +1,6 @@
 # MARKDOWN LINKS
 
-## INTRODUCCIÓN.
+## INTRODUCCIÓN
 
 **¿ Qué es Markdown ?**
 
@@ -20,7 +20,11 @@ Crear una herramienta que valide los links y sacar una estadística del total de
 
 ![md-links](https://github.com/PaolaS2992/ProjectGit/blob/master/img/Recursion.png)
 
-## INSTALACIÓN.
+**Planificación del Proyecto**
+
+Aqui podras encontrar un board con el backlog de la implementación de la librería. [BacklogGithub](https://github.com/PaolaS2992/LIM011-fe-md-links/projects/2)
+
+## INSTALACIÓN
 
 Ingresar al terminal y digitar lo siguiente:
 
@@ -31,14 +35,14 @@ Ingresar al terminal y digitar lo siguiente:
 
 ### API `mdLinks(path, opts)`
 
-##### Argumentos
+**Argumentos**
 
 - `path`: Ruta absoluta o relativa al archivo o directorio.
 - `options`: Un objeto con las siguientes propiedades:
   * `validate`: Booleano que determina si se desea validar los links
     encontrados.
 
-#### Ejemplo
+**Ejemplo**
 
 ```js
 const mdLinks = require("md-links");
@@ -68,15 +72,15 @@ La estructura del comando es de la siguiente manera:
 
 `md-links <path-to-file> [options]`
 
-#### Path to file.
+#### Ruta <path-to-file>
 
 En caso solo se ingrese el `<path-to-file>` se considerara: ruta, link y texto.
 
-###### Por ejemplo:
+**Por ejemplo:**
 
 `md-links example.md`
 
-###### Resultado:
+**Resultado:**
 
 ```sh
 $ md-links ./some/example.md
@@ -85,17 +89,17 @@ $ md-links ./some/example.md
 ./some/example.md http://google.com/ Google
 ```
 
-#### Options.
+#### Opciones [options].
 
 ##### `--validate`
 
 Si pasamos la opción `--validate`, Comprueba si el link funciona o no.
 
-###### Por ejemplo:
+**Por ejemplo:**
 
 `md-links example.md --validate`
 
-###### Resultado:
+**Resultado:**
 
 ```sh13d99df067c1
 $ md-13d99df067c1
@@ -109,11 +113,11 @@ $ md-13d99df067c1
 Si pasamos la opción `--stats` la salida será un texto con estadísticas
 básicas sobre los links.
 
-###### Por ejemplo:
+**Por ejemplo:**
 
 `md-links example.md --stats`
 
-###### Resultado:
+**Resultado:**
 
 ```sh
 $ md-links ./some/example.md --stats
