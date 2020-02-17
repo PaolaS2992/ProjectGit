@@ -61,12 +61,8 @@ const converterHtml = (documentMnd) => {
 const statusHttp = (url) => fetch(url)
   .then((res) => {
     let mensaje = '';
-    if (res.ok) {
-      mensaje = 'OK';
-    }
-    if (res.ok === false) {
-      mensaje = 'fail';
-    }
+    if (res.ok) mensaje = 'OK';
+    if (res.ok === false) mensaje = 'fail';
     const obj = {
       status: res.status,
       text: mensaje,

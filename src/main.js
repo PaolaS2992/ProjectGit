@@ -1,8 +1,10 @@
 const functionApp = require('./app.js');
 
 // 1. Devuelve una ruta absoluta.
-// eslint-disable-next-line max-len
-const isAbsolute = (path) => (functionApp.verifyDirectory(path) ? path : functionApp.converterAbsolute(path));
+
+const isAbsolute = (path) => (
+  (functionApp.verifyDirectory(path) ? path : functionApp.converterAbsolute(path))
+);
 
 
 // 2. Devuelve un array de documentos Markdown - "Funcion recursiva".
@@ -175,19 +177,6 @@ const getMdLinkValidate = (path) => {
     }).catch((err) => err);
 };
 
-/* const functionMain = {
-  getPathMd,
-  renderHtml,
-  arrLink,
-  isAbsolute,
-  getMdLink,
-  arrLinkValidate,
-  getMdLinkValidate,
-  mdLinks,
-  stats,
-  validate,
-}; */
-
 const functionMain = {
   getMdLink,
   getMdLinkValidate,
@@ -196,4 +185,3 @@ const functionMain = {
 };
 
 module.exports = functionMain;
-// module.exports = mdLinks;
