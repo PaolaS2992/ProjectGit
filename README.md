@@ -1,6 +1,6 @@
 # Markdown Links
 
-## A. Introdución.
+## Introdución.
 
 [Markdown](https://es.wikipedia.org/wiki/Markdown) es un lenguaje de marcado
 ligero muy popular entre developers. Es usado en muchísimas plataformas que
@@ -15,15 +15,16 @@ la información que se quiere compartir.
 Por tal motivo se realizo esta herramienta que tiene como objetivo validar los
 links y sacar una estadística del total de Links, status, repetidos y rotos. 
 
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
 
-## B. Instalación.
+## Instalación.
 
 Ingresar al terminal y digitar lo siguiente:
 
 `npm install <github-user>/md-links`
 
 
-## C. Formas de Uso.
+## Formas de Uso.
 
 ### API `mdLinks(path, opts)`
 
@@ -66,7 +67,7 @@ La estructura del comando es de la siguiente manera:
 
 #### Path to file.
 
-En caso solo de ingrese el `<path-to-file>` se considerara: ruta, link y texto.
+En caso solo se ingrese el `<path-to-file>` se considerara: ruta, link y texto.
 
 ###### Por ejemplo:
 
