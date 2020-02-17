@@ -1,6 +1,6 @@
-# Markdown Links
+# MARKDOWN LINKS
 
-## Introdución.
+## INTRODUCCIÓN.
 
 **¿ Qué es Markdown ?**
 
@@ -14,16 +14,20 @@ Estos archivos `Markdown` normalmente contienen _links_ (vínculos/ligas) que mu
 
 Crear una herramienta que valide los links y sacar una estadística del total de Links, status, repetidos y rotos. 
 
-![md-links](https://github.com/PaolaS2992/ProjectGit/blob/master/img/Archivo_Markdown.png)
+![md-links](https://github.com/PaolaS2992/ProjectGit/blob/master/img/ArchivoMarkdown.png)
 
-## Instalación.
+**Diagrama de Flujo**
+
+![md-links](https://github.com/PaolaS2992/ProjectGit/blob/master/img/Recursion.png)
+
+## INSTALACIÓN.
 
 Ingresar al terminal y digitar lo siguiente:
 
 `npm install <github-user>/md-links`
 
 
-## Formas de Uso.
+## FORMAS DE USO.
 
 ### API `mdLinks(path, opts)`
 
