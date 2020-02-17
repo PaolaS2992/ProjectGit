@@ -151,14 +151,14 @@ Broken: 1
 - [ ] Testeo asíncrono
 - [X] Uso de librerias de Mock
 - [X] Mocks manuales
-- [ ] Testeo para multiples Sistemas Operativos
+- [X] Testeo para multiples Sistemas Operativos
 
 ### Git y Github
 - [X] Organización en Github
 
 ### Buenas prácticas de desarrollo
 - [X] Modularización
-- [X] Nomenclatura / Semántica
-- [ ] Linting
+- [ ] Nomenclatura / Semántica
+- [X] Linting
 
 ***
