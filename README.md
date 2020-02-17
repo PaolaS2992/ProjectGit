@@ -2,18 +2,17 @@
 
 ## Introdución.
 
-[Markdown](https://es.wikipedia.org/wiki/Markdown) es un lenguaje de marcado
-ligero muy popular entre developers. Es usado en muchísimas plataformas que
-manejan texto plano (GitHub, foros, blogs, ...), y es muy común
-encontrar varios archivos en ese formato en cualquier tipo de repositorio
-(empezando por el tradicional `README.md`).
+**¿ Qué es Markdown ?**
 
-Estos archivos `Markdown` normalmente contienen _links_ (vínculos/ligas) que
-muchas veces están rotos o ya no son válidos y eso perjudica mucho el valor de
-la información que se quiere compartir.
+Markdown es un lenguaje de marcado ligero muy popular entre developers. Es usado en muchísimas plataformas que manejan texto plano (GitHub, foros, blogs, ...), y es muy común encontrar varios archivos en ese formato en cualquier tipo de repositorio (empezando por el tradicional `README.md`).
 
-Por tal motivo se realizo esta herramienta que tiene como objetivo validar los
-links y sacar una estadística del total de Links, status, repetidos y rotos. 
+**¿ Cuál es la problemática ?**
+
+Estos archivos `Markdown` normalmente contienen _links_ (vínculos/ligas) que muchas veces están rotos o ya no son válidos y eso perjudica mucho el valor de la información que se quiere compartir.
+
+**¿ Cuál es el objetivo del Proyecto ?**
+
+Crear una herramienta que valide los links y sacar una estadística del total de Links, status, repetidos y rotos. 
 
 ![md-links](https://github.com/PaolaS2992/ProjectGit/blob/master/img/Archivo_Markdown.png)
 
