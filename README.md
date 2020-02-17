@@ -15,7 +15,7 @@ la información que se quiere compartir.
 Por tal motivo se realizo esta herramienta que tiene como objetivo validar los
 links y sacar una estadística del total de Links, status, repetidos y rotos. 
 
-![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+![md-links](https://github.com/PaolaS2992/ProjectGit/blob/master/img/Archivo_Markdown.png)
 
 ## Instalación.
 
