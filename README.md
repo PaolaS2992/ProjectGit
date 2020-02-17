@@ -1,6 +1,6 @@
 # Markdown Links
 
-## Introduciòn
+## A. Introdución.
 
 [Markdown](https://es.wikipedia.org/wiki/Markdown) es un lenguaje de marcado
 ligero muy popular entre developers. Es usado en muchísimas plataformas que
@@ -12,34 +12,27 @@ Estos archivos `Markdown` normalmente contienen _links_ (vínculos/ligas) que
 muchas veces están rotos o ya no son válidos y eso perjudica mucho el valor de
 la información que se quiere compartir.
 
+Por tal motivo se realizo esta herramienta que tiene como objetivo validar los
+links y sacar una estadística del total de Links, status, repetidos y rotos. 
 
-## Instalaciòn
+
+## B. Instalación.
+
+Ingresar al terminal y digitar lo siguiente:
 
 `npm install <github-user>/md-links`
 
 
-## Fomas de Uso
+## C. Formas de Uso.
 
 ### API `mdLinks(path, opts)`
 
 ##### Argumentos
 
-- `path`: Ruta absoluta o relativa al archivo o directorio. Si la ruta pasada es
-  relativa, debe resolverse como relativa al directorio desde donde se invoca
-  node - _current working directory_).
+- `path`: Ruta absoluta o relativa al archivo o directorio.
 - `options`: Un objeto con las siguientes propiedades:
   * `validate`: Booleano que determina si se desea validar los links
     encontrados.
-
-##### Valor de retorno
-
-La función debe retornar una promesa (`Promise`) que resuelva a un arreglo
-(`Array`) de objetos (`Object`), donde cada objeto representa un link y contiene
-las siguientes propiedades:
-
-- `href`: URL encontrada.
-- `text`: Texto que aparecía dentro del link (`<a>`).
-- `file`: Ruta del archivo donde se encontró el link.
 
 #### Ejemplo
 
@@ -67,12 +60,19 @@ mdLinks("./some/dir")
 
 ### CLI (Command Line Interface - Interfaz de Línea de Comando)
 
-El ejecutable de nuestra aplicación debe poder ejecutarse de la siguiente
-manera a través de la terminal:
+La estructura del comando es de la siguiente manera:
 
 `md-links <path-to-file> [options]`
 
-Por ejemplo:
+#### Path to file.
+
+En caso solo de ingrese el `<path-to-file>` se considerara: ruta, link y texto.
+
+** Por ejemplo: **
+
+`md-links example.md`
+
+** Resultado: **
 
 ```sh
 $ md-links ./some/example.md
@@ -81,21 +81,17 @@ $ md-links ./some/example.md
 ./some/example.md http://google.com/ Google
 ```
 
-El comportamiento por defecto no debe validar si las URLs responden ok o no,
-solo debe identificar el archivo markdown (a partir de la ruta que recibe como
-argumento), analizar el archivo Markdown e imprimir los links que vaya
-encontrando, junto con la ruta del archivo donde aparece y el texto
-que hay dentro del link (truncado a 50 caracteres).
-
-#### Options
+#### Options.
 
 ##### `--validate`
 
-Si pasamos la opción `--validate`, el módulo debe hacer una petición HTTP para
-averiguar si el link funciona o no. Si el link resulta en una redirección a una
-URL que responde ok, entonces consideraremos el link como ok.
+Si pasamos la opción `--validate`, Comprueba si el link funciona o no.
 
-Por ejemplo:
+** Por ejemplo: **
+
+`md-links example.md --validate`
+
+** Resultado: **
 
 ```sh13d99df067c1
 $ md-13d99df067c1
@@ -104,14 +100,16 @@ $ md-13d99df067c1
 ./some/example.md http://google.com/ ok 301 Google
 ```
 
-Vemos que el _output_ en este caso incluye la palabra `ok` o `fail` después de
-la URL, así como el status de la respuesta recibida a la petición HTTP a dicha
-URL.
-
 ##### `--stats`
 
-Si pasamos la opción `--stats` el output (salida) será un texto con estadísticas
+Si pasamos la opción `--stats` la salida será un texto con estadísticas
 básicas sobre los links.
+
+** Por ejemplo: **
+
+`md-links example.md --stats`
+
+** Resultado: **
 
 ```sh
 $ md-links ./some/example.md --stats
@@ -121,6 +119,8 @@ Unique: 3
 
 También podemos combinar `--stats` y `--validate` para obtener estadísticas que
 necesiten de los resultados de la validación.
+
+`md-links example.md --stats --validate`
 
 ```sh
 $ md-links ./some/example.md --stats --validate
@@ -135,13 +135,13 @@ Broken: 1
 - [X] Uso de callbacks
 - [X] Consumo de Promesas
 - [X] Creacion de Promesas
-- [ ] Modulos de Js
+- [X] Modulos de Js
 - [X] Recursión
 
 ### Node
 - [X] Sistema de archivos
 - [X] package.json
-- [ ] crear modules
+- [X] crear modules
 - [X] Instalar y usar modules
 - [ ] npm scripts
 - [X] CLI (Command Line Interface - Interfaz de Línea de Comando)
